@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Dictionary</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- CDN LINKS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <header>English Dictionary</header>
+        <div class="search">
+            <input type="text" name="search" id="search" placeholder="Search" required>
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <!-- <i class="fa-solid fa-xmark"></i> -->
+            <span class="material-icons">close</span>
+        </div>
+        <p class="info-text">Type a word and press enter to get the Meaning, example, pronounciation and synonyms of that typed word</p>
+        <ul>
+            <li class="word">
+                <div class="details">
+                    <p>---</p>
+                    <span>---</span>
+                </div>
+                <i class="fas fa-volume-up" id="volume"></i>
+            </li>
+            <div class="content">
+                <li class="meaning">
+                    <div class="details">
+                        <p>Meaning</p>
+                        <span>------</span>
+                    </div>
+                </li>
+                <li class="example">
+                    <div class="details">
+                        <p>Example</p>
+                        <span class="ex">------</span>
+                        <span class="block"></span>
+                    </div>
+                </li>
+                <li class="synonyms">
+                    <div class="details">
+                        <p>Synonyms</p>
+                        <div class="list"> </div>
+                        <span class="sy-block"></span>
+                    </div>
+                </li>
+            </div>
+
+        </ul>
+        <h6 class="footer">&copy; Copyright 2022 Siddhant Mishra</h6>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
